@@ -1,3 +1,4 @@
+
 .output-h2 {
     font-weight: 400;
 }
@@ -10,3 +11,13 @@ p {
 .bold {
     font-weight: bolder;
 }
+
+body {
+    margin: 0 !important;
+    min-height: auto;
+}
+
+.form-container {
+    width: 75%;
+}
+

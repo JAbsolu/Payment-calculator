@@ -26,7 +26,7 @@
          .green {color: green;}
       </style>
    </head>
-   <body class="container bg-dark">
+   <body class="bg-dark m-0">
       <!-- Title -->
       <?php
          $title = "Lease payment calculator";
@@ -34,9 +34,9 @@
       ?>
 
       <header>
-         <h1 class="text-white text-center"><?php echo $updated_title; ?></h1>
+         <h1 class="text-white text-center m-4"><?php echo $updated_title; ?></h1>
       </header>
-      <main class="d-flex justify-content-center">
+      <main class="d-flex justify-content-center main pb-0 mb-0">
          <?php 
              //set default value of variables for initial page load
             if (!isset($price)) { $price = 20655; } 
@@ -47,8 +47,8 @@
             $interest_rate_formatted = $interest_rate . "%";
          ?>
          <!-- This section is for your DATA INPUT FORM -->  
-         <div class=" w-75 px-5 pl-5 d-flex justify-content-center">
-            <form action="10-numbers-output.php" method="post" class="p-5 rounded">
+         <div class=" w-75 mr-0 p-5 d-flex justify-content-center form-container">
+            <form action="10-numbers-output.php" method="post" class="rounded m-0">
                <label for="grade">
                   <h2>This form calculates lease payments for a new car</h2>
                </label>
@@ -75,7 +75,6 @@
                      <option name="72" value="72 Months" required>72 Months</option>
                   </select>
                </div>
-                  
                <input type="submit" name="calculate" value="Calculate" class="bg-dark">
                <input type="reset"  name="reset"  value="Clear Form">
             </form>
